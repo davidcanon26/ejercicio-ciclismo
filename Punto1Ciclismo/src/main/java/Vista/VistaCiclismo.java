@@ -19,13 +19,21 @@ public class VistaCiclismo {
                 + "Por favor seleccione una opcion"));
         return opcion;
     }
-    public void registrarCompetidor(){
-        String nombre = JOptionPane.showInputDialog("Nombre del competidor: ");
-        int edad = Integer.parseInt(JOptionPane.showInputDialog("Edad del competidor: "));
-        String pais = JOptionPane.showInputDialog("Pais del competidor: ");
-        double estatura = Double.parseDouble(JOptionPane.showInputDialog("Estatura del competidor: "));
-        double peso = Double.parseDouble(JOptionPane.showInputDialog("Peso del competidor: "));
-        double puntos = Double.parseDouble(JOptionPane.showInputDialog("Puntos iniciales del competidor: "));
+   public String pedirTexto(String mensaje) {
+        return JOptionPane.showInputDialog(mensaje, "Entrada de Datos");
     }
-    
+
+    public int pedirEntero(String mensaje) {
+        String entrada = JOptionPane.showInputDialog(mensaje, "Entrada de Datos");
+        return Integer.parseInt(entrada);
+    }
+
+    public double pedirDecimal(String mensaje) {
+        String entrada = JOptionPane.showInputDialog(mensaje, "Entrada de Datos");
+        return Double.parseDouble(entrada);
+    }
+
+    public void mostrarMensaje(String mensaje) {
+        JOptionPane.showMessageDialog(null, mensaje);
+    }
 }
