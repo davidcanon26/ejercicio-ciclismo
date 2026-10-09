@@ -13,9 +13,9 @@ public class Competidor extends Atleta{
     private double peso;
     private double puntos;
 
-    public Competidor(int ranking, double estatura, double peso,double puntos, String nombre, int edad, String pais) {
+    public Competidor(double estatura, double peso,double puntos, String nombre, int edad, String pais) {
         super(nombre, edad, pais);
-        this.ranking = ranking;
+        this.ranking = 0;
         this.estatura = estatura;
         this.peso = peso;
         this.puntos = puntos;

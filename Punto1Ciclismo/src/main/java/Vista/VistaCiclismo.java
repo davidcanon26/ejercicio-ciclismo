@@ -36,4 +36,16 @@ public class VistaCiclismo {
     public void mostrarMensaje(String mensaje) {
         JOptionPane.showMessageDialog(null, mensaje);
     }
+    public boolean pedirBooleano(String mensaje){
+        boolean medalla;
+        int entrada = Integer.parseInt(JOptionPane.showInputDialog(mensaje, "si(1), no(2)"));
+        if (entrada==1){
+            medalla = true;
+            return medalla;
+        }
+        else{
+            medalla = false;
+            return medalla;
+        }
+    }
 }
