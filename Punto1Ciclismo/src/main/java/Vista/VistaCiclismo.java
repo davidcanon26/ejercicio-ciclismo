@@ -38,14 +38,19 @@ public class VistaCiclismo {
     }
     public boolean pedirBooleano(String mensaje){
         boolean medalla;
-        int entrada = Integer.parseInt(JOptionPane.showInputDialog(mensaje, "si(1), no(2)"));
-        if (entrada==1){
+        while(true){
+            int entrada = Integer.parseInt(JOptionPane.showInputDialog(mensaje +  "si(1), no(2)"));
+            if (entrada==1){
             medalla = true;
             return medalla;
-        }
-        else{
+            }
+            else if(entrada==2){
             medalla = false;
             return medalla;
+            }
+            else{
+                mostrarMensaje("Opción no válida. Intente de nuevo.");
+            }
         }
-    }
+    }    
 }
