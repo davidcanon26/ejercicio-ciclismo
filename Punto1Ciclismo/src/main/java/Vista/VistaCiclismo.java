@@ -20,16 +20,16 @@ public class VistaCiclismo {
         return opcion;
     }
    public String pedirTexto(String mensaje) {
-        return JOptionPane.showInputDialog(mensaje, "Entrada de Datos");
+        return JOptionPane.showInputDialog(mensaje);
     }
 
     public int pedirEntero(String mensaje) {
-        String entrada = JOptionPane.showInputDialog(mensaje, "Entrada de Datos");
+        String entrada = JOptionPane.showInputDialog(mensaje);
         return Integer.parseInt(entrada);
     }
 
     public double pedirDecimal(String mensaje) {
-        String entrada = JOptionPane.showInputDialog(mensaje, "Entrada de Datos");
+        String entrada = JOptionPane.showInputDialog(mensaje);
         return Double.parseDouble(entrada);
     }
 
