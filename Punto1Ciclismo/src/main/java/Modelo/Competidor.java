@@ -61,6 +61,22 @@ public class Competidor extends Atleta{
                 "Estatura:"+ estatura + "\n"+
                 "Peso"+ peso;
     }
-    
-    
+    public void actualizarRanking(int puntosObtenidos) {
+        this.puntos += puntosObtenidos;
+    }
+    public void actualizarRanking(int puntosObtenidos, boolean ganoMedalla) {
+        int bonificacion = 0;
+        if (ganoMedalla) {
+            if (puntosObtenidos > 50) {
+                bonificacion = 20;
+            } else {
+                bonificacion = 10;
+            }
+        } else {
+            if (puntosObtenidos > 100) {
+                bonificacion = 5;
+            }
+        }
+        this.puntos += puntosObtenidos + bonificacion;
+    }
 }
