@@ -11,12 +11,14 @@ public class Competidor extends Atleta{
     private int ranking;
     private double estatura;
     private double peso;
+    private double puntos;
 
-    public Competidor(int ranking, double estatura, double peso, String nombre, int edad, String pais) {
+    public Competidor(int ranking, double estatura, double peso,double puntos, String nombre, int edad, String pais) {
         super(nombre, edad, pais);
         this.ranking = ranking;
         this.estatura = estatura;
         this.peso = peso;
+        this.puntos = puntos;
     }
 
     public int getRanking() {
@@ -42,6 +44,15 @@ public class Competidor extends Atleta{
     public void setPeso(double peso) {
         this.peso = peso;
     }
+
+    public double getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(double puntos) {
+        this.puntos = puntos;
+    }
+    
     
     @Override
     public String toString(){

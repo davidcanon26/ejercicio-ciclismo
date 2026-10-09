@@ -19,5 +19,13 @@ public class VistaCiclismo {
                 + "Por favor seleccione una opcion"));
         return opcion;
     }
+    public void registrarCompetidor(){
+        String nombre = JOptionPane.showInputDialog("Nombre del competidor: ");
+        int edad = Integer.parseInt(JOptionPane.showInputDialog("Edad del competidor: "));
+        String pais = JOptionPane.showInputDialog("Pais del competidor: ");
+        double estatura = Double.parseDouble(JOptionPane.showInputDialog("Estatura del competidor: "));
+        double peso = Double.parseDouble(JOptionPane.showInputDialog("Peso del competidor: "));
+        double puntos = Double.parseDouble(JOptionPane.showInputDialog("Puntos iniciales del competidor: "));
+    }
     
 }
