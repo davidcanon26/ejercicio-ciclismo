@@ -3,7 +3,8 @@
  */
 
 package com.mycompany.punto1ciclismo;
-
+import Controlador.ControladorCiclismo;
+import Vista.VistaCiclismo;
 /**
  *
  * @author Usuario
@@ -11,6 +12,8 @@ package com.mycompany.punto1ciclismo;
 public class Punto1Ciclismo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        VistaCiclismo vista = new VistaCiclismo();
+        ControladorCiclismo controlador = new ControladorCiclismo(vista);
+        controlador.iniciar();
     }
 }
