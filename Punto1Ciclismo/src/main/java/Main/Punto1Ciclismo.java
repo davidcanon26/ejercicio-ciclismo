@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.punto1ciclismo;
+package Main;
 import Controlador.ControladorCiclismo;
 import Vista.VistaCiclismo;
 /**
